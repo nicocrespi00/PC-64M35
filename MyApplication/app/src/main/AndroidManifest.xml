@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="PC 64M35"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".Pages.MainActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Pages.UserConfiguration"/>
+        <activity android:name=".Pages.GameDetails" />
+        <activity android:name=".Pages.GamesList" />
+        <activity android:name=".Pages.NewUser"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>
